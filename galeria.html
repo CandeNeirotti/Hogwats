@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <script src="https://kit.fontawesome.com/7fcbed67fe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Tapestry&display=swap" rel="stylesheet">
+
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="contenedor-menu" id="contenedor-menu">
+        
+            <div class="abrir-menu" id="abrir-menu"><img src="images//escudo.png" alt="" width="85px" height="90px"></div>
+            <nav class="elementos-navegacion">
+                <ul>
+                    <li><a href="index.html"> Inicio</a> </li>
+                    <li><a href="plandeestudios.html"> Plan de estudio</a> </li>
+                    <li><a href="galeria.html"> ¿Quienes somos?</a> </li>
+                    <li><a href="formulario.html"> Inscripciones</a> </li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="container">
+            
+            
+        </div>
+        <script src="app.js"></script>
+     </header>
+     <main>
+        <div class="titulo-principal">
+            <h1>¿QUIENES SOMOS?</h1>
+        </div>
+        
+        <div class="scroll">
+            <img src="Images/castillo.png" alt="">
+            <p class="texto-scroll">Hogwarts fue fundado hace mil años por los cuatro magos más reconocidos de la época: Godric Griffyndor, Salazar Slytherin, Rowena Ravenclaw y Helga Hufflepuff. Somos una escuela de magia y hechicería fundada con el fin de que jóvenes magos aprendan y puedan desarrollar sus habilidades mágicas. Poseemos asignaturas que abarcan todos los aspectos fundamentales para comprender, controlar y respetar el mundo mago. Nos enorgullece decir que formamos parte de una de las instituciones educativas de mayor prestigio y calidad pedagógica.</p>
+        </div>
+        <div class="subtitulos">
+            <p>Director</p>
+        </div>
+        <div class="scroll">
+            
+            <p class="texto-scroll">Albus Percival Wulfric Brian Dumbledore es el director de nuestro establecimiento. También se desempeña como Jefe de Magos del Wizengamot. El se encarga de tomar de llevar a cabo la organización y control de la institución. Ademas tienen el poder de pasar por alto, cualquier decisión tomada por cualquier otro miembro del staff del colegio, con la excepción del Consejo Escolar. Un Director también controla los encantamientos protectores del castillo, y el ingreso de individuos a los terrenos del colegio. </p>
+            <img src="Images/dumbledore.png" alt="">
+        </div>
+        <div class="subtitulos">
+            <p>Instalaciones</p>
+        </div>
+        <div class="options">
+            <div class="option active" style='--optionBackground:url(https://i.pinimg.com/564x/73/47/ba/7347bafc7202f4f9a13065e2e434882a.jpg);'>
+               <div class="shadow"></div>
+               <div class="label">
+                  <div class="icon">
+                   <i class="fa-solid fa-wand-sparkles"></i>
+                  </div>
+                  <div class="info">
+                     <div class="main">Enfermeria</div>
+                  </div>
+               </div>
+            </div>
+            <div class="option" style='--optionBackground:url(https://i.pinimg.com/564x/9c/d1/e0/9cd1e000fd75c2b223416d192bef4248.jpg);'>
+               <div class="shadow"></div>
+               <div class="label">
+                  <div class="icon">
+                   <i class="fa-solid fa-wand-sparkles"></i>
+                  </div>
+                  <div class="info">
+                     <div class="main">Salon de clase</div>
+                  </div>
+               </div>
+            </div>
+            <div class="option" style='--optionBackground:url(https://i.pinimg.com/564x/b5/90/29/b5902930256ff9476a34ea8ef50f7994.jpg);'>
+               <div class="shadow"></div>
+               <div class="label">
+                  <div class="icon">
+                   <i class="fa-solid fa-wand-sparkles"></i>
+                  </div>
+                  <div class="info">
+                     <div class="main">Salon principal</div>
+                  </div>
+               </div>
+            </div>
+            <div class="option" style='--optionBackground:url(https://i.pinimg.com/564x/91/96/1a/91961a55415dd5b6010c2865ccfc685f.jpg);'>
+               <div class="shadow"></div>
+               <div class="label">
+                  <div class="icon">
+                   <i class="fa-solid fa-wand-sparkles"></i>
+                  </div>
+                  <div class="info">
+                     <div class="main">Campo de Quidditch</div>
+                  </div>
+               </div>
+            </div>
+            <div class="option" style='--optionBackground:url(https://i.pinimg.com/564x/79/37/9a/79379a95d7babf7605be732364a6b3ae.jpg);'>
+               <div class="shadow"></div>
+               <div class="label">
+                  <div class="icon">
+                   <i class="fa-solid fa-wand-sparkles"></i>
+                  </div>
+                  <div class="info">
+                     <div class="main">Laboratorio</div>
+                  </div>
+               </div>
+             </div>
+            </div>
+         </div>
+
+         
+         <script>
+          $(".option").click(function(){
+           $(".option").removeClass("active");
+           $(this).addClass("active");
+          })
+    
+         </script>
+
+            <div class="subtitulos">
+                <p>Noticias</p>
+            </div>
+
+         <div class="iframes">
+            <iframe width="560" height="315"src="https://thedailyprophet.net/"   frameborder="0"></iframe>
+     
+
+         </div>
+         <footer>
+            <footer id="footer">
+                <div class="contenedor footer-content">
+                        <div class="contact-us">
+                            <h2 class="brand">Hogwarts</h2>
+                            <p>Draco dormiens nunquam titillandus</p>
+                        </div>
+                        <div class="social-media">
+                            <a href="https://www.facebook.com/HPHogwartsMystery/" class="social-media-icon">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="https://twitter.com/Hogwartssite/with_replies" class="social-media-icon">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/hogwartsofficial_/" class="social-media-icon">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                </div>
+                <div class="line"></div>
+         </footer>
+     </main>
+</body>
+</html>

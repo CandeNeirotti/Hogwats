@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <script src="https://kit.fontawesome.com/7fcbed67fe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Tapestry&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="contenedor-menu" id="contenedor-menu">
+         
+            <div class="abrir-menu" id="abrir-menu"><img src="images//escudo.png" alt="" width="85px" height="90px"></div>
+            <nav class="elementos-navegacion">
+                <ul>
+                    <li><a href="index.html"> Inicio</a> </li>
+                    <li><a href="plandeestudios.html"> Plan de estudio</a> </li>
+                    <li><a href="galeria.html"> ¿Quienes somos?</a> </li>
+                    <li><a href="formulario.html"> Inscripciones</a> </li>
+                </ul>
+            </nav>
+        </div>
+    
+        <script src="app.js"></script>
+    </HEAder>
+    <div class="titulo-principal">
+        <h1>Formulario de Inscripciones</h1>
+    </div>
+    <main class="main-formulario">
+        <div class="formulario" style="background-image: url(../images/carta.jpg) ">
+            <div class="formulario-contenido">
+                <form action="destino.html" method= "get" name="fvalida" onsubmit="return valida_envia();" id="formulario">
+                    <p>Nombre: </p>
+                    <input type="text" name="Nombre" id="nombre" placeholder="Nombre: " >
+                    <br>
+                    <p>Edad:</p>
+                    <input type="number" name="edad" id="edad" placeholder="Ingrese edad "> 
+                    <p>Varita magica:</p>
+                    <input type="text" name="varita" id="varita" placeholder="Varita magica: " >
+                    <br>
+                    <p>Tipo de sangre:</p>
+                    <select class="sangre"  aria-label="size 3 select example">
+                        <option selected>Sangre mestiza</option>
+                        <option value="1">Sangre pura</option>
+                        <option value="2">Squibs</option>
+                        <option value="3">Muggle</option>
+                        <option value="4">Hibrido</option>
+                    </select>
+                    <p>Casa:</p>
+                    <select class="casa" id="casa"  aria-label="size 3 select example" >
+                        <option value="1">Gryffindor</option>
+                        <option value="2">Hufflepuff</option>
+                        <option value="3">Ravenclaw</option>
+                        <option value="4">Slytherin</option>
+                    </select>
+                      <br>
+                    <p>Asignatura:</p>
+                    <input type="checkbox" name="herbologian" id="herbologia" id="herbologia">
+                    <label for="">Herbologia</label>
+                    
+                    <br>
+                    <input type="checkbox" name="vuelo" id="vuelo" >
+                    <label for="">Instruccion al vuelo</label>
+                        <br>
+                        <input type="checkbox" name="atronomia"  id="astronomia">
+                        <label for="">Astronomia</label>
+                    
+                      <br>
+                      <input type="checkbox" name="transformaciones" id="transformaciones" >
+                      <label for="">Transformaciones</label>
+                    
+                      <br>
+                      <input type="checkbox" name="cuidado" id="cuidado" >
+                      <label for="">Cuidado de las criaturas magicas</label>
+                    
+                      <br>
+                      <input type="checkbox" name="defensa"  id="defensa">
+                      <label for="">Defensa de las artes oscuras</label>
+                    
+                      <br>
+                      <input type="checkbox" name="pociones" id="pociones">
+                      <label for="">Pociones</label>
+                    
+                      <br>
+                      <input type="checkbox" name="adivinacion" id="adivinacion" >
+                      <label for="">Adivinacion</label>
+                    
+                      <br>
+                      <input type="checkbox" name="encantamientos" id="encantamientos">
+                      <label for="">Encantamientos</label>
+                      <label id="mensaje"></label>
+                      <br>
+                      <br>
+                      <button class= "btn" type="submit"></button>
+                      <br>
+                </form>
+            </div>
+        </div>
+        
+
+        <script>
+
+            function valida_envia() {
+
+                valor = document.getElementById("nombre").value;
+                
+            
+                if( valor == null || valor.length == 0) {
+                
+                    alert("Tenes que completar el nombre")
+                    elemento = document.getElementById('nombre');
+                    elemento.focus();
+                
+                    return false;
+                } 
+                
+                edad = document.fvalida.edad.value
+                document.fvalida.edad.value = edad
+                if (edad == "" || edad< 12) {
+                    alert("La edad ingresada es invalida")
+                    document.fvalida.edad.focus()
+                    return false; }
+
+            
+            
+
+                varita = document.fvalida.varita.value
+                document.fvalida.varita.value = varita
+                if( varita == null || varita.length == 0) {
+                
+                    alert("Debes describir tu tipo de varita")
+                    document.fvalida.edad.focus()
+            
+                return false;
+                } else {
+                    return true;
+
+                }
+                
+                     
+                
+                
+    
+ 
+            }
+            
+            
+        </script>
+    </main>
+    <footer>
+        <footer id="footer">
+            <div class="contenedor footer-content">
+                    <div class="contact-us">
+                        <h2 class="brand">Hogwarts</h2>
+                        <p>Draco dormiens nunquam titillandus</p>
+                    </div>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/HPHogwartsMystery/" class="social-media-icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/Hogwartssite/with_replies" class="social-media-icon">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/hogwartsofficial_/" class="social-media-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+            </div>
+            <div class="line"></div>
+        </footer>
+    </footer>
+</body>
+</html>
