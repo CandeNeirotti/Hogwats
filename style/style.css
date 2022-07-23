@@ -332,7 +332,25 @@ div.text-slider {
     padding: 150px 100px;
     -webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
     box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+    background-image: url(../images/carta.jpg)
 
+}
+@media screen and (max-width:450px){
+    .text-slider{
+        font-size: 7px;
+        padding-left: 5px;
+    }
+    .formulario{
+       background-image: url(../images/fondo.jpg);
+       padding: 10px 18px;
+       margin-bottom: 10px;
+       justify-content: center;
+
+    }
+    .btn{
+     
+       margin-bottom: 30px;
+    }
 }
 
 .formulario-contenido{
